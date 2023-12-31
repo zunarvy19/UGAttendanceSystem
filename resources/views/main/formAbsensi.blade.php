@@ -69,8 +69,8 @@
                                         <label for="sakit">Sakit</label>  
                                     </div>
                                     <div>
-                                        <input type="radio" name="kehadiran{{$student->id}}" value="Alfa">
-                                        <label for="alfa">Alpa</label>  
+                                        <input type="radio" name="kehadiran{{$student->id}}" value="Alpha">
+                                        <label for="alfa">Alpha</label>  
                                     </div>
                                 </div>                                
                             </td>

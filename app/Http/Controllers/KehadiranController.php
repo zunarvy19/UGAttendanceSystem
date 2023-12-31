@@ -37,7 +37,7 @@ class KehadiranController extends Controller
             $status_kehadiran = $request->input('kehadiran' . $student->id);
             
             if (!$status_kehadiran) {
-                $status_kehadiran = 'Alfa';
+                $status_kehadiran = 'Alpha';
             }
             // Simpan data kehadiran ke database
             $absensi = new Kehadiran();

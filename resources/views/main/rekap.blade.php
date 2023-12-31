@@ -35,7 +35,7 @@
                 <option {{ (Request::get('status_kehadiran') == 'Hadir') ? 'selected' : ''}}  value="Hadir" >Hadir</option>
                 <option {{ (Request::get('status_kehadiran') == 'Izin') ? 'selected' : ''}}   value="Izin">Izin</option>
                 <option {{ (Request::get('status_kehadiran') == 'Sakit') ? 'selected' : ''}}  value="Sakit">Sakit</option>
-                <option {{ (Request::get('status_kehadiran') == 'Alfa') ? 'selected' : ''}}  value="Alfa">Alpa</option>
+                <option {{ (Request::get('status_kehadiran') == 'Alpha') ? 'selected' : ''}}  value="Alpha">Alpha</option>
         </select>
         </div>
         <div class="mt-3">

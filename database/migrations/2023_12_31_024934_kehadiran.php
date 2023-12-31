@@ -19,7 +19,7 @@ return new class extends Migration
             $table->foreign('kelas_id')->references('id')->on('daftar_kelas');
             $table->unsignedBigInteger('minggu_id')->references('id')->on('minggus');
             $table->date('tanggal');
-            $table->enum('status_kehadiran', ['Hadir', 'Izin', 'Sakit','Alfa']);
+            $table->enum('status_kehadiran', ['Hadir', 'Izin', 'Sakit','Alpha']);
             $table->timestamps();
         });
     }
