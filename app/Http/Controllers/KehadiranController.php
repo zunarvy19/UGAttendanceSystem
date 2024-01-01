@@ -51,12 +51,12 @@ class KehadiranController extends Controller
 
         $datahadir = Kehadiran::with(['mahasiswa', 'kelas'])->get();
 
-        return view('main.dashboard', [
+        return view('main.rekap', [
             'datakelas' => $datakelas,
             'cariminggu' => $cariminggu,
             "datahadir" => $datahadir,
             'absensi'=> $absensi,
-            "title" => 'Rekap Absen'
+            "title" => 'Rekap Absensi'
         ]);
 
         

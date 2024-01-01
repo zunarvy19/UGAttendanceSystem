@@ -22,7 +22,7 @@ class authController extends Controller
             'username'=> 'required',
             'password'=> 'required'
         ],[
-            'username.required'=> 'username wajib di isi',
+            'username.required'=> 'Username wajib di isi',
             'password.required'=> 'Password wajib di isi'
         ]);
         $infoLogin = [

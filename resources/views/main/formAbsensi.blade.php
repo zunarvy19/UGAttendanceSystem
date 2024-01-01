@@ -19,6 +19,8 @@
                 <div class="flex justify-center">
                     <input class="text-3xl font-semibold text-center mt-3 mb-8 " hidden type="text" name="kelas_id" value="{{ $dataAbsensi->kelas_id }}">
                 </div>
+
+
                 
               </div>
               
@@ -57,8 +59,8 @@
                             <td class="p-2 md:border md:border-dark text-center block md:table-cell"><span class="inline-block md:hidden font-bold">Status Kehadiran</span>
                                 <div class="flex gap-x-10 justify-center">
                                     <div>
-                                        <input type="radio" name="kehadiran{{$student->id}}" value="Hadir">
-                                        <label for="hadir">Hadir</label>  
+                                        <input type="radio" name="kehadiran{{$student->id}}" value="Hadir" >
+                                        <label for="hadir" >Hadir</label>  
                                     </div>
                                     <div>
                                         <input type="radio" name="kehadiran{{$student->id}}" value="Izin">
@@ -82,53 +84,45 @@
                   </table>
               </div>
               <div class="flex justify-end">
-                    <button class="bg-primary text-white py-2 w-[98px] rounded-lg hover:bg-opacity-75 font-normal text-center mt-10 mb-10" id="submitButton">
+                    <button class="bg-primary text-white py-2 w-[98px] rounded-lg hover:bg-opacity-75 font-normal text-center mt-10 mb-10" id="submitAbsen">
                         Submit
                     </button>
-              </div>
-              <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-              <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                const form = document.getElementById('formKehadiran');
-                const submitButton = document.getElementById('submitButton');
-        
-                submitButton.addEventListener('click', function(event) {
-                    event.preventDefault(); // Mencegah pengiriman formulir secara langsung
-              
-                    // Tampilkan SweetAlert saat tombol submit diklik
-                    Swal.fire({
-                      title: 'Data berhasil disimpan',
-                      text: 'Ingin melihat laporan kehadiran mahasiswa?',
-                      icon: 'success',
-                      showCancelButton: true,
-                      confirmButtonText: 'Ya!',
-                      confirmButtonColor: '#176B87',
-                      cancelButtonText: 'Batal'
-                    }).then((result) => {
-                      // Jika pengguna mengklik 'Ya, Simpan!', kirim formulir
-                      if (result.isConfirmed) {
-                        form.submit(); // Kirim formulir setelah SweetAlert dikonfirmasi
-                      }
-                    });
-                  });
-                });
-              </script>
+                    <script>
+                      document.addEventListener('DOMContentLoaded', function() {
+                      const form = document.getElementById('formKehadiran');
+                      const submitButton = document.getElementById('submitAbsen');
+
+                      submitButton.addEventListener('click', function(event) {
+                          event.preventDefault(); // Mencegah pengiriman formulir secara langsung
+
+                          // Tampilkan SweetAlert saat tombol submit diklik
+                          Swal.fire({
+                            title: 'Data berhasil disimpan',
+                            text: 'Ingin melihat laporan kehadiran mahasiswa?',
+                            icon: 'success',
+                            showCancelButton: true,
+                            confirmButtonText: 'Ya!',
+                            confirmButtonColor: '#176B87',
+                            cancelButtonText: 'Batal'
+                          }).then((result) => {
+                            // Jika pengguna mengklik 'Ya, Simpan!', kirim formulir
+                            if (result.isConfirmed) {
+                              form.submit(); // Kirim formulir setelah SweetAlert dikonfirmasi
+                            }
+                          });
+                        });
+                      });
+                    </script>
+              </div>
             </form>
           </div>
       </div>
   </section>
 </section>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-  $(document).ready(function() {
-    $('select[name="kelas_id"]').on('change', function() {
-      var selectedClassId = $(this).val();
-      var selectedClassName = $('select[name="kelas_id"] option:selected').text();
-      $('#selectedClassName span').text(selectedClassName);
-    });
-  });
-</script>
+
 
 
 @endsection

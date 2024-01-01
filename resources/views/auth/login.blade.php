@@ -59,7 +59,7 @@
                     </div>
                     @endif
                   <div class="flex justify-start pt-2 mt-2">
-                    <input type="checkbox">
+                    <input type="checkbox" name="remember">
                     <label class="text-white text-base ml-1"> Ingat saya</label>
                   </div>
     

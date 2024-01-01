@@ -45,7 +45,6 @@
                                         <script>
                                             Swal.fire({
                                                 title: 'Password berhasil diubah! <br>silahkan login kembali</br>',
-                                                // text: '{{ session('success') }}',
                                                 icon: 'success',
                                                 confirmButtonText: 'OK',
                                                 confirmButtonColor: '#176B87',
