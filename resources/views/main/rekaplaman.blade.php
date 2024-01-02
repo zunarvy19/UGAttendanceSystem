@@ -32,13 +32,13 @@
                                     </svg>
                                 </div>
                                 <input name="search" type="search" id="default-search" class="block w-96 p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 " placeholder="Cari mahasiswa">
-                                <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-secondary hover:bg-opacity-75 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Cari</button>
+                                <button type="submit" class="text-white absolute right-2.5 bottom-2.5 bg-blue-500 hover:bg-opacity-75 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Cari</button>
                             </div>
                         </div>
                     </form>                                           
         </div>
         <div>
-            <table class="min-w-full border-collapse block md:table ">
+            <table class="min-w-full border-collapse block md:table mb-10">
                 <thead class="block md:table-header-group">
                 <tr class="border border-grey-500 md:border-none block md:table-row absolute -top-full md:top-auto -left-full md:left-auto  md:relative ">
                     <th class="bg-primary p-2 text-white font-semibold md:border md:border-dark text-center block md:table-cell">No</th>

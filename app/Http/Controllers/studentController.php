@@ -8,14 +8,25 @@ use Illuminate\Http\Request;
 
 class studentController extends Controller
 {
+
+
+
     public function dashboard(){
+
+        $totalMahasiswa = Student::count();
+        $totalkelas = daftarKelas::count();
+
+
         return view("main.dashboard", [
             "title" => 'Dashboard',
+            'totalkelas'=> $totalkelas,
+            'totalMahasiswa' => $totalMahasiswa,
         ]);
     }
 
     public function viewprofile(){
         return view("main.profile", [
+        
             "title" => "Profile"
         ]);
     }

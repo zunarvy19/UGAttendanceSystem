@@ -14,14 +14,14 @@
               <div class="bg-gradient-to-r from-primary to-secondary h-[25vh] rounded-3xl drop-shadow-md">
                   <div class="flex flex-col pl-10">
                       <h1 class="text-2xl text-white font-semibold pt-8">TOTAL MAHASISWA</h1>
-                      <h1 class="text-4xl text-white font-semibold pt-16">164</h1>
+                      <h1 class="text-4xl text-white font-semibold pt-16">{{$totalMahasiswa}}</h1>
                       <h1 class="text-2xl text-white font-semibold pt-2">MAHASISWA</h1>
                   </div>
               </div>
               <div class="bg-gradient-to-r from-primary to-secondary h-[25vh] rounded-3xl drop-shadow-md">
                   <div class="flex flex-col pl-10">
                       <h1 class="text-2xl text-white font-semibold pt-8">TOTAL KELAS</h1>
-                      <h1 class="text-4xl text-white font-semibold pt-16">4</h1>
+                      <h1 class="text-4xl text-white font-semibold pt-16">{{$totalkelas}}</h1>
                       <h1 class="text-2xl text-white font-semibold pt-2">KELAS</h1>
                   </div>
               </div>
