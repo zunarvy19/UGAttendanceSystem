@@ -48,6 +48,7 @@
                                                 icon: 'success',
                                                 confirmButtonText: 'OK',
                                                 confirmButtonColor: '#176B87',
+                                                backdrop: 'rgba(23, 118, 140, 0.65)',
                                                 willClose: () => {
                                                     // Lakukan logout dengan mengirimkan permintaan POST ke endpoint logout Laravel
                                                     fetch('/logout', {

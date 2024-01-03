@@ -82,7 +82,6 @@
 
                 </aside>
                 {{-- LOGOUT --}}
-               
                 <form action="/logout" method="POST" id="formLogout">
                     @csrf
                     <div id="Logout" class="">
@@ -103,21 +102,22 @@
                                   event.preventDefault(); // Mencegah pengiriman formulir secara langsung
                             
                                   // Tampilkan SweetAlert saat tombol submit diklik
-                                  Swal.fire({
+                                Swal.fire({
                                     title: 'Apakah Anda yakin ingin keluar?',
-                                    icon: 'warning',
+                                    icon: 'question',
                                     showCancelButton: true,
+                                    backdrop: 'rgba(23, 118, 140, 0.65)',
                                     confirmButtonText: 'Logout',
                                     confirmButtonColor: '#176B87',
                                     cancelButtonText: 'Cancel'
-                                  }).then((result) => {
+                                }).then((result) => {
                                     // Jika pengguna mengklik 'Ya, Simpan!', kirim formulir
                                     if (result.isConfirmed) {
                                       form.submit(); // Kirim formulir setelah SweetAlert dikonfirmasi
                                     }
-                                  });
                                 });
-                              });
+                                });
+                            });
                             </script>
                 </div>
                 </form>

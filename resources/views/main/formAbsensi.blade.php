@@ -91,21 +91,23 @@
                     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
                     <script>
-                      document.addEventListener('DOMContentLoaded', function() {
-                      const form = document.getElementById('formKehadiran');
-                      const submitButton = document.getElementById('submitAbsen');
+                    document.addEventListener('DOMContentLoaded', function() {
+                    const form = document.getElementById('formKehadiran');
+                    const submitButton = document.getElementById('submitAbsen');
 
-                      submitButton.addEventListener('click', function(event) {
+                    submitButton.addEventListener('click', function(event) {
                           event.preventDefault(); // Mencegah pengiriman formulir secara langsung
 
                           // Tampilkan SweetAlert saat tombol submit diklik
-                          Swal.fire({
+                        Swal.fire({
                             title: 'Data berhasil disimpan',
                             text: 'Ingin melihat laporan kehadiran mahasiswa?',
                             icon: 'success',
+                            dangerMode: true,
                             showCancelButton: true,
                             confirmButtonText: 'Ya!',
                             confirmButtonColor: '#176B87',
+                            backdrop: 'rgba(23, 118, 140, 0.65)',
                             cancelButtonText: 'Batal'
                           }).then((result) => {
                             // Jika pengguna mengklik 'Ya, Simpan!', kirim formulir
